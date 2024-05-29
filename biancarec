@@ -1,0 +1,32 @@
+#1
+select nome,especialidade 
+from Medicos;
+
+#2 
+select * from Medicos 
+where salario between 15000 and 16000;
+
+#3
+select nome, email from Medicos 
+order by nome asc;
+
+#4
+select * from Medicos order by data_contratacao desc;
+
+#5
+select especializacoes_adicionais from Medicos where especializacoes_adicionais like 'Cirurgia';
+
+#6
+select * from Medicos where data_contratacao > '2020-00-00';
+
+#7
+select * from Medicos where horario_trabalho = '12:00 - 20:00' or '11:00 - 19:00';
+
+#8
+select * from Medicos where telefone like '%8901';
+
+#9
+select * from Medicos where especializacoes_adicionais = 'Cardiologia';
+
+#10
+select sum( salario) and avg(salario) from salario 
